@@ -1,0 +1,16 @@
+<h2>Custom Pipe - Pure Pipe</h2>
+<p>{{ money | currency : 'USD' : true }}</p>
+<p>{{ money | currencyExchange: 'CNY' | currency: 'CNY' : true}}</p>
+
+<h2>Impure Pipe</h2>
+<ul>
+  <li *ngFor="let m of (moneyList | myfilter)">
+    {{ m }}
+  </li>
+</ul>
+<input type="number" [(ngModel)]="newMoney">
+<button class="btn btn-primary" (click)="addMoney()">Add Money</button>
+
+<h2>Async Pipe(impure pipe).subscribe to Promise or Observable.</h2>
+<p>{{ fetchMoney | async | currency }}</p>
+

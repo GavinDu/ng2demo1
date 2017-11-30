@@ -1,0 +1,14 @@
+<h4>Attribute Directive</h4>
+<div>
+ <span appMyhidden [data]="person">
+   person: {{ person ? person.name : '' }}
+ </span>
+  <!-- <span>[appMyHidden]="person"</span>-->
+</div>
+<h4>Structure Directive</h4>
+<div>
+  <span *appMyif="person">{{ person.name }}</span>
+</div>
+
+<button class="btn btn-primary" (click)="togglePerson()">Toggle</button>
+

@@ -1,0 +1,8 @@
+<h2>Change Detection</h2>
+
+<div>
+  <app-cd-person [person]="person"></app-cd-person>
+  <p>Age in CD:{{ person.get('age') }}</p>
+  <button class="btn btn-primary" (click)="addAge()">Add Age</button>
+  <button class="btn btn-primary" (click)="testAge()">Test Age</button>
+</div>

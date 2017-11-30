@@ -1,0 +1,15 @@
+<h2>Angular 2/4 Life Cycle</h2>
+<ul>
+  <li>ngOnChanges</li>
+  <li class="text-primary">ngOnInit</li>
+  <li>ngOnCheck</li>
+  <li class="text-primary">ngAfterContentInit</li>
+  <li>ngAfterContentCheck</li>
+  <li class="text-primary">ngAfterViewInit</li>
+  <li>ngAfterViewChecked</li>
+  <li class="text-primary">ngOnDestroy</li>
+</ul>
+
+<app-lc-person [person]="person"></app-lc-person>
+<button type="button" class="btn btn-primary" (click)="changePerson()">Change Person</button>
+<button type="button" class="btn btn-primary" (click)="changePersonName()">Change Person Name</button>
